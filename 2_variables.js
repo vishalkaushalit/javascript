@@ -5,10 +5,9 @@ accountCity = "Mohali"
 let accountState;
 
 /* 
-    Prevent to use var 
+    Prevent to use var because of issue of block scope and functional scope
     Constant value can never be reassigned e.g accountId = 2 is not allowed because 
     it is already declared at the top 
-    Let variable is block scoped
 */
 
 accountEmail = "test@gmail.com"
