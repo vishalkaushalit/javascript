@@ -39,28 +39,42 @@
 
 // console.log(+ "") // 0
 
-let num1,num2,num3
+// let num1,num2,num3
 
-num1 = num2 = num3 = 2 + 2
+// num1 = num2 = num3 = 2 + 2
 
-let gameCounter = 100
+// let gameCounter = 100
 
-gameCounter++;
-console.log(`Post gameCounter:${gameCounter}`)
+// gameCounter++;
+// console.log(`Post gameCounter:${gameCounter}`)
 
-// ++gameCounter;
-// console.log(`Pre gameCounter:${gameCounter}`)
+// // ++gameCounter;
+// // console.log(`Pre gameCounter:${gameCounter}`)
 
-let x = 3;
-const y = x++;
+// let x = 3;
+// const y = x++;
 
-console.log(`x:${x}, y:${y}`);
-// Output: "x:4, y:3" Returns the original value (3) for assignment to y, and increases x to 4.
+// console.log(`x:${x}, y:${y}`);
+// // Output: "x:4, y:3" Returns the original value (3) for assignment to y, and increases x to 4.
 
-let a = 3;
-const b = ++a;
+// let a = 3;
+// const b = ++a;
 
-console.log(`a:${a}, b:${b}`);
+// console.log(`a:${a}, b:${b}`);
 // Output: "a:4, b:4" Increases a to 4, then returns the new value (4) for assignment to b.
 
 // Remember: postfix returns the old value and prefix returns the new value.
+
+let num_1 = 3;
+num_1++
+const num_2 = ++num_1; 
+
+console.log(`num_1:${num_1}, num_2:${num_2}`);
+
+
+/* 
+if num_1++ before assign num_2 then num_1:5, num_2:5 if num+2 is assigned as ++num_1
+if ++num_1 before assign num_2 then num_1:5, num_2:5 if num+2 is assigned as ++num_1
+if num_1++ before assign num_2 then num_1:5, num_2:4 if num+2 is assigned as num_1++
+if ++num_1 before assign num_2 then num_1:5, num_2:4 if num+2 is assigned as num_1++
+*/
